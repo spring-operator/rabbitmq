@@ -218,7 +218,7 @@ if [ -z "$shouldWriteConfig" ] && [ ! -f "$oldConfigFile" ] && [ ! -f "$newConfi
 	shouldWriteConfig=1
 fi
 
-# http://stackoverflow.com/a/2705678/433558
+# https://stackoverflow.com/a/2705678/433558
 sed_escape_lhs() {
 	echo "$@" | sed -e 's/[]\/$*.^|[]/\\&/g'
 }
